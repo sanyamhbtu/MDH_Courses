@@ -81,17 +81,13 @@ const About: React.FC = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 2018, MDH X Let's Capture emerged from a simple yet powerful vision: 
-                  to bridge the gap between traditional education and industry requirements in digital marketing.
+                 Founded in 2025, MDH X Let's Capture was born from a shared mission — to deliver industry-relevant digital marketing education through creativity and real-world expertise.
                 </p>
                 <p>
-                  MDH brought years of strategic marketing experience and business acumen, while Let's Capture 
-                  contributed creative excellence and innovative teaching methodologies. Together, we created 
-                  a comprehensive learning platform that combines the best of both worlds.
+                  MDH, a specialized digital marketing training company, brings deep-rooted knowledge of market trends, strategy, and performance-driven campaigns. Let's Capture, a creative production house, contributes its strength in content creation, branding, and storytelling.
                 </p>
                 <p>
-                  Today, we have trained over 5,000 students, maintained a 95% placement rate, and built 
-                  partnerships with 200+ leading companies across various industries.
+                  Together, we’ve crafted a hands-on, practical learning platform designed to empower learners with both technical skills and creative confidence.
                 </p>
               </div>
             </div>
@@ -102,7 +98,7 @@ const About: React.FC = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-orange-500 text-white p-6 rounded-2xl shadow-xl">
-                <div className="text-3xl font-bold">2018</div>
+                <div className="text-3xl font-bold">2025</div>
                 <div className="text-sm">Founded</div>
               </div>
             </div>
@@ -171,7 +167,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Meet Our Team */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Leadership Team</h2>
@@ -199,14 +195,14 @@ const About: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">5000+</div>
+              <div className="text-4xl font-bold mb-2">100+</div>
               <div className="text-blue-100">Students Trained</div>
             </div>
             <div>
@@ -214,11 +210,11 @@ const About: React.FC = () => {
               <div className="text-blue-100">Placement Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">200+</div>
+              <div className="text-4xl font-bold mb-2">20+</div>
               <div className="text-blue-100">Hiring Partners</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-4xl font-bold mb-2">2</div>
               <div className="text-blue-100">Expert Mentors</div>
             </div>
           </div>

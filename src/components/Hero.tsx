@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Play, Star, Users, Award, TrendingUp, BookOpen, Lightbulb } from 'lucide-react';
+import { ArrowRight, Play, Users, Award,BookOpen, Lightbulb } from 'lucide-react';
 
 interface HeroProps {
   onRegisterClick: () => void;
@@ -56,48 +56,27 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
       <div className="absolute top-20 left-10 animate-bounce delay-1000">
         <div className="bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20">
           <div className="flex items-center space-x-2">
-            <BookOpen className="h-6 w-6 text-orange-400" />
-            <span className="text-white font-semibold text-sm">MDH</span>
+            <BookOpen className="h-5 w-5 text-orange-400" />
+            <span className="text-white font-semibold text-xs">MDH</span>
           </div>
         </div>
       </div>
       <div className="absolute top-40 right-20 animate-bounce delay-2000">
         <div className="bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20">
           <div className="flex items-center space-x-2">
-            <Lightbulb className="h-6 w-6 text-yellow-400" />
-            <span className="text-white font-semibold text-sm">Let's Capture</span>
+            <Lightbulb className="h-5 w-5 text-yellow-400" />
+            <span className="text-white font-semibold text-xs">Let's Capture</span>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-40 left-20 animate-bounce delay-3000">
-        <div className="bg-white/10 p-3 rounded-full backdrop-blur-sm border border-white/20">
-          <Award className="h-6 w-6 text-green-400" />
-        </div>
-      </div>
-      <div className="absolute top-60 right-10 animate-bounce delay-4000">
-        <div className="bg-white/10 p-3 rounded-full backdrop-blur-sm border border-white/20">
-          <Users className="h-6 w-6 text-blue-400" />
-        </div>
-      </div>
+      
+      
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Brand Badge */}
-          {/* <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
-            <div className="flex items-center space-x-2">
-              <BookOpen className="h-5 w-5 text-orange-400" />
-              <span className="text-white font-bold">MDH</span>
-            </div>
-            <span className="text-orange-400 font-bold">X</span>
-            <div className="flex items-center space-x-2">
-              <Lightbulb className="h-5 w-5 text-yellow-400" />
-              <span className="text-white font-bold">Let's Capture</span>
-            </div>
-          </div> */}
-
           {/* Dynamic Main Heading */}
-          <div className="mb-6 mt-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
+          <div className="mt-24">
+            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-snug sm:leading-tight text-center">
               <span className="inline-block transition-all duration-500 transform">
                 {dynamicTexts[currentText]}
               </span>
@@ -106,6 +85,7 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
               </span>
             </h1>
           </div>
+
 
           {/* Enhanced Subtitle */}
           <p className="text-xl sm:text-2xl text-blue-100 mb-10 max-w-4xl mx-auto leading-relaxed">
@@ -117,11 +97,11 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
           </p>
 
           {/* Enhanced Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-sm sm:max-w-xl lg:max-w-4xl mx-auto px-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <div className="bg-green-500 w-3 h-3 rounded-full animate-pulse"></div>
-                <span className="text-2xl font-bold text-white">5000+</span>
+                <span className="text-2xl font-bold text-white">500+</span>
               </div>
               <span className="text-blue-200 text-sm">Students Trained</span>
             </div>
@@ -135,7 +115,7 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <div className="bg-blue-500 w-3 h-3 rounded-full animate-pulse"></div>
-                <span className="text-2xl font-bold text-white">200+</span>
+                <span className="text-2xl font-bold text-white">20+</span>
               </div>
               <span className="text-blue-200 text-sm">Hiring Partners</span>
             </div>
@@ -149,33 +129,33 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
           </div>
 
           {/* Enhanced CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-            <button
-              onClick={onRegisterClick}
-              className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-2xl hover:shadow-orange-500/30 transform hover:scale-105 flex items-center space-x-3"
-            >
-              <span>Start Your Journey</span>
-              <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
-            </button>
-            
-            <button className="group flex items-center space-x-3 text-white border-2 border-white/40 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
-              <Play className="h-6 w-6 group-hover:scale-110 transition-transform" />
-              <span>Watch Success Stories</span>
-            </button>
-          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 px-4">
+  <button
+    onClick={onRegisterClick}
+    className="group w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-2xl hover:shadow-orange-500/30 transform hover:scale-105 flex items-center justify-center space-x-3"
+  >
+    <span>Start Your Journey</span>
+    <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 group-hover:translate-x-1 transition-transform" />
+  </button>
+
+  <button className="group w-full sm:w-auto flex items-center justify-center space-x-3 text-white border-2 border-white/40 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+    <Play className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform" />
+    <span>Watch Success Stories</span>
+  </button>
+</div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
-            <span className="text-blue-200 text-sm">Trusted by students from</span>
-            <div className="flex items-center space-x-6">
-              {['IIT', 'NIT', 'IIM', 'Top Universities'].map((institution, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
-                  <span className="text-white font-medium text-sm">{institution}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-80 px-4 text-center">
+  <span className="text-blue-200 text-sm">Trusted by students from</span>
+  <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+    {['IIT', 'NIT', 'IIM', 'Top Universities'].map((institution, index) => (
+      <div key={index} className="flex items-center space-x-2">
+        <div className="w-2 h-2 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+        <span className="text-white font-medium text-sm">{institution}</span>
+      </div>
+    ))}
+  </div>
+</div>
         </div>
       </div>
 

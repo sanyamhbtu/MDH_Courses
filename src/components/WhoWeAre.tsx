@@ -24,19 +24,19 @@ const WhoWeAre: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">2018</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">2025</div>
                 <div className="text-sm text-gray-600">Founded</div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">2</div>
                 <div className="text-sm text-gray-600">Expert Mentors</div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">20+</div>
                 <div className="text-sm text-gray-600">Hiring Partners</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
                 <div className="text-sm text-gray-600">Course Specializations</div>
               </div>
             </div>

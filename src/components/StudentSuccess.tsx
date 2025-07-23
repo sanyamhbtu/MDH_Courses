@@ -2,48 +2,41 @@ import React from 'react';
 import { Star, MapPin, Briefcase } from 'lucide-react';
 
 const StudentSuccess: React.FC = () => {
-  const students = [
-    {
-      name: 'Priya Sharma',
-      role: 'Digital Marketing Manager',
-      company: 'Flipkart',
-      location: 'Bangalore',
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      story: 'Transitioned from IT to digital marketing and got placed at Flipkart with 40% salary hike.',
-      rating: 5,
-      course: 'Complete Digital Marketing'
-    },
-    {
-      name: 'Rahul Patel',
-      role: 'SEO Specialist',
-      company: 'Zomato',
-      location: 'Delhi',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      story: 'Started from zero marketing knowledge, now leading SEO team at Zomato.',
-      rating: 5,
-      course: 'SEO & Content Strategy'
-    },
-    {
-      name: 'Sneha Gupta',
-      role: 'Social Media Manager',
-      company: 'Paytm',
-      location: 'Mumbai',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      story: 'From housewife to handling social media campaigns for millions of users.',
-      rating: 5,
-      course: 'Social Media Marketing'
-    },
-    {
-      name: 'Amit Kumar',
-      role: 'PPC Specialist',
-      company: 'OYO',
-      location: 'Gurgaon',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      story: 'Achieved 300% ROI improvement in PPC campaigns within first 6 months.',
-      rating: 5,
-      course: 'PPC & Google Ads'
-    }
-  ];
+ const students = [
+  {
+    name: 'Manoj Singh',
+    role: 'Digital Marketing Executive',
+    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+    story: 'Made a successful career switch from IT to marketing with a 40% salary hike.',
+    rating: 5,
+    course: 'Complete Digital Marketing'
+  },
+  {
+    name: 'Aakash Kushwaha',
+    role: 'Digital Marketing Executive',
+    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+    story: 'Started with no marketing background and quickly rose to lead major SEO projects.',
+    rating: 5,
+    course: 'Complete Digital Marketing'
+  },
+  {
+    name: 'Harsh Kushwaha',
+    role: 'SEO Executive',
+    image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+    story: 'Transformed her passion into a profession, managing campaigns that reach millions.',
+    rating: 5,
+    course: 'SEO & Content Strategy'
+  },
+  {
+    name: 'Rahul Yadav',
+    role: 'Digital Marketing Executive',
+    image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+    story: 'Improved campaign performance by 300% within just 6 months of training.',
+    rating: 5,
+    course: 'Complete Digital Marketing'
+  }
+];
+
 
   return (
     <section className="py-20 bg-white">
@@ -81,18 +74,7 @@ const StudentSuccess: React.FC = () => {
 
               <div className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-1">{student.name}</h3>
-                <div className="flex items-center space-x-2 mb-2">
-                  <Briefcase className="h-4 w-4 text-gray-500" />
-                  <span className="text-sm text-gray-600">{student.role}</span>
-                </div>
-                <div className="flex items-center space-x-2 mb-3">
-                  <span className="font-semibold text-blue-600">{student.company}</span>
-                  <span className="text-gray-400">•</span>
-                  <div className="flex items-center space-x-1">
-                    <MapPin className="h-3 w-3 text-gray-400" />
-                    <span className="text-sm text-gray-500">{student.location}</span>
-                  </div>
-                </div>
+                
                 <p className="text-gray-600 text-sm leading-relaxed">{student.story}</p>
               </div>
             </div>
@@ -101,7 +83,7 @@ const StudentSuccess: React.FC = () => {
 
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Join 5000+ Successful Students</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Join 100+ Successful Students</h3>
             <div className="flex flex-wrap justify-center items-center gap-8 text-lg">
               <div className="flex items-center space-x-2">
                 <span className="text-3xl font-bold text-green-600">95%</span>

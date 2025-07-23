@@ -5,52 +5,39 @@ const Testimonials: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const testimonials = [
-    {
-      name: 'Anjali Verma',
-      role: 'Digital Marketing Manager',
-      company: 'Myntra',
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      rating: 5,
-      testimonial: 'The course content was exceptional and the mentors were incredibly supportive. I landed my dream job at Myntra within 2 months of completion. The practical approach and real-world projects made all the difference in my learning journey.',
-      course: 'Complete Digital Marketing'
-    },
-    {
-      name: 'Rohit Sharma',
-      role: 'SEO Specialist',
-      company: 'Paytm',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      rating: 5,
-      testimonial: 'From zero SEO knowledge to managing SEO for one of India\'s largest fintech companies. The structured curriculum and hands-on projects prepared me perfectly for the industry challenges.',
-      course: 'SEO & Content Strategy'
-    },
-    {
-      name: 'Priya Singh',
-      role: 'Social Media Manager',
-      company: 'Zomato',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      rating: 5,
-      testimonial: 'The social media marketing course was comprehensive and up-to-date with the latest trends. The placement support was amazing - I got multiple job offers and chose Zomato for their culture and growth opportunities.',
-      course: 'Social Media Marketing'
-    },
-    {
-      name: 'Arjun Patel',
-      role: 'PPC Manager',
-      company: 'BookMyShow',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      rating: 5,
-      testimonial: 'The PPC course was incredibly detailed with real campaign management experience. Now I\'m managing multi-million rupee ad budgets at BookMyShow. The ROI knowledge I gained has been invaluable.',
-      course: 'PPC & Google Ads'
-    },
-    {
-      name: 'Kavya Reddy',
-      role: 'Email Marketing Specialist',
-      company: 'Nykaa',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      rating: 5,
-      testimonial: 'The email marketing module was fantastic with real automation setups. I\'ve increased email revenue by 300% at Nykaa using the strategies I learned. The mentorship was personalized and extremely helpful.',
-      course: 'Email Marketing'
-    }
-  ];
+  {
+    name: 'Manoj Singh',
+    role: 'Digital Marketing Executive',
+    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    rating: 5,
+    testimonial: 'This course gave me a strong grip on digital marketing fundamentals and campaign strategy. I now confidently handle end-to-end digital projects.',
+    course: 'Complete Digital Marketing'
+  },
+  {
+    name: 'Aakash Kushwaha',
+    role: 'Digital Marketing Executive',
+    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    rating: 5,
+    testimonial: 'Perfect for anyone starting from scratch. The blend of SEO, content, and paid ads helped me build a strong foundation.',
+    course: 'Complete Digital Marketing'
+  },
+  {
+    name: 'Harsh Kushwaha',
+    role: 'SEO Executive',
+    image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    rating: 5,
+    testimonial: 'Focused, practical, and up-to-date. I now plan and execute SEO strategies with real impact on rankings and traffic.',
+    course: 'SEO & Content Strategy'
+  },
+  {
+    name: 'Ravi Sharma',
+    role: 'PPC Executive',
+    image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    rating: 5,
+    testimonial: 'The PPC training was exactly what I needed. I can now confidently run ad campaigns and analyze performance data effectively.',
+    course: 'Complete Digital Marketing'
+  }
+];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -106,9 +93,7 @@ const Testimonials: React.FC = () => {
                     <div className="font-bold text-gray-900 text-lg">
                       {testimonials[currentSlide].name}
                     </div>
-                    <div className="text-gray-600">
-                      {testimonials[currentSlide].role} at <span className="font-semibold text-blue-600">{testimonials[currentSlide].company}</span>
-                    </div>
+                    
                     <div className="text-sm text-orange-600 font-medium mt-1">
                       {testimonials[currentSlide].course}
                     </div>
@@ -175,7 +160,6 @@ const Testimonials: React.FC = () => {
                   />
                   <div className="text-left">
                     <div className="font-medium text-sm text-gray-900">{testimonial.name}</div>
-                    <div className="text-xs text-gray-500">{testimonial.company}</div>
                   </div>
                 </div>
               </button>

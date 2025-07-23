@@ -1,13 +1,30 @@
 import React from 'react';
-
+import astroindusootlogo from '../../assets/astroindusootlogo.png';
+import digianni from '../../assets/digianni.png';
+import dmcslogo from '../../assets/dmcs_logo_web.png';
+import mv from '../../assets/mv.jpg';
+import omegaprogrammer from '../../assets/OmegaProgrammer.png'
+import techdost from '../../assets/techdost.webp';
+import techmagnate from '../../assets/techmagnate.svg';
+import webhopers from '../../assets/webhopers.png';
+import techcentrica from '../../assets/techcentrica.png';
+import garage from '../../assets/garage.png';
+import weadpro from '../../assets/weadpro.png';
 const Partners: React.FC = () => {
   const partners = [
-    { name: 'Google', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
-    { name: 'Facebook', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
-    { name: 'Amazon', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
-    { name: 'Microsoft', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
-    { name: 'Shopify', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
-    { name: 'HubSpot', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
+    { name: 'DMCS India', logo: dmcslogo },
+    { name: 'TECHDOST', logo: techdost },
+    { name: 'ASTROINDUSOOT', logo: astroindusootlogo },
+    { name: 'OMEGAPROGRAMMER', logo: omegaprogrammer },
+    { name: 'Weadpro', logo: weadpro},
+    { name: 'DIGIDIR', logo: digianni},
+    { name: 'MDH', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
+    { name: 'MV', logo: mv},
+    { name: 'SIX SOFT MEDIA', logo: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop' },
+    { name: 'TECHMAGNATE', logo: techmagnate},
+    { name: 'GARAGE MEDIA', logo: garage},
+    { name: 'TECHCENTRICA', logo: techcentrica },
+    { name: 'WEBHOPERS', logo: webhopers },
   ];
 
   return (
@@ -23,14 +40,18 @@ const Partners: React.FC = () => {
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll space-x-12 items-center">
             {[...partners, ...partners].map((partner, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
-              >
-                <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold text-sm">{partner.name}</span>
-                </div>
-              </div>
+               <div
+    key={index}
+    className="flex-shrink-0 bg-white rounded-lg p-2 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
+  >
+    <div className="w-24 h-12 bg-white flex items-center justify-center">
+      <img
+        src={partner.logo}
+        alt={partner.name}
+        className="max-h-12 max-w-full object-contain"
+      />
+    </div>
+  </div>
             ))}
           </div>
         </div>

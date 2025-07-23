@@ -8,38 +8,13 @@ interface FeaturedCoursesProps {
 const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({ onRegisterClick }) => {
   const courses = [
     {
-      title: 'Complete Digital Marketing Mastery',
-      description: 'Comprehensive program covering all aspects of digital marketing from basics to advanced strategies.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      duration: '12 weeks',
-      students: 1250,
-      rating: 4.9,
-      price: '₹24,999',
-      originalPrice: '₹39,999',
-      features: ['SEO & SEM', 'Social Media', 'Email Marketing', 'Analytics', 'Content Strategy'],
-      badge: 'Most Popular'
-    },
-    {
-      title: 'Social Media Marketing Pro',
-      description: 'Master Facebook, Instagram, LinkedIn, and Twitter marketing with hands-on campaigns.',
-      image: 'https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      duration: '8 weeks',
-      students: 890,
-      rating: 4.8,
-      price: '₹16,999',
-      originalPrice: '₹24,999',
-      features: ['Platform Strategy', 'Content Creation', 'Paid Advertising', 'Community Management'],
-      badge: 'Best Seller'
-    },
-    {
-      title: 'SEO & Content Strategy',
-      description: 'Learn advanced SEO techniques and content marketing strategies for organic growth.',
+      title: 'Digital Marketing Basic to Advanced',
+      description: 'Master digital marketing from scratch — SEO, social media, ads, content, analytics & more. Learn by doing with real projects and expert guidance.',
       image: 'https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      duration: '10 weeks',
-      students: 670,
+      duration: '3 Months',
       rating: 4.9,
-      price: '₹19,999',
-      originalPrice: '₹29,999',
+      price: '₹12,000',
+      originalPrice: '₹15,999',
       features: ['Technical SEO', 'Content Planning', 'Link Building', 'Local SEO'],
       badge: 'Expert Level'
     }
@@ -51,10 +26,10 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({ onRegisterClick }) =>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Courses</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Industry-designed curriculum with hands-on projects, expert mentorship, and guaranteed placement support
+            Master digital marketing with an industry-relevant curriculum, real-world projects, expert guidance, and dedicated placement support
           </p>
         </div>
-
+    {/* //grid grid-cols-1 lg:grid-cols-3 */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
             <div
@@ -87,10 +62,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({ onRegisterClick }) =>
                     <div className="flex items-center space-x-1">
                       <Clock className="h-4 w-4" />
                       <span>{course.duration}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="h-4 w-4" />
-                      <span>{course.students}</span>
                     </div>
                   </div>
                 </div>
@@ -137,7 +108,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({ onRegisterClick }) =>
               <span className="text-lg font-semibold">Certificate & Placement Guarantee</span>
             </div>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Complete any course and get industry-recognized certification plus guaranteed placement assistance with our 200+ hiring partners
+              Complete any course and get industry-recognized certification plus guaranteed placement assistance with our 20+ hiring partners
             </p>
             <button
               onClick={onRegisterClick}

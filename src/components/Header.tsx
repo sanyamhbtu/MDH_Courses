@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick }) => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Courses', path: '/courses' },
-    { name: 'Mentors', path: '/mentors' },
+    // { name: 'Mentors', path: '/mentors' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick }) => {
                 />
               </div>
               <span
-                className={`text-base sm:text-lg font-bold ${
+                className={`text-sm sm:text-lg font-bold ${
                   isScrolled ? 'text-gray-900' : 'text-white'
                 } transition-colors`}
               >
@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick }) => {
                 />
               </div>
               <span
-                className={`text-base sm:text-lg font-bold ${
+                className={`text-sm sm:text-lg font-bold ${
                   isScrolled ? 'text-gray-900' : 'text-white'
                 } transition-colors`}
               >
